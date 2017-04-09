@@ -20,6 +20,14 @@ Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom
 }
 
 .container {
+	width: 100% !important;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background: #939393;
+}
+
+header {
 	width: 100%;
 	/*max-width: 1000px;*/
 	left: 0;
@@ -51,8 +59,7 @@ Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom
 	}
 }
 
-header nav {
-	background: #BABABA;
+header > .container > nav {
 	margin-bottom: 10px;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -79,9 +86,21 @@ header nav {
 				display: block;
 				color: #fff;
 				text-decoration: none;
+				transition: 1s ease;
+		 		-moz-transition: 1s ease; /* Firefox */
+		 		-webkit-transition: 1s ease; /* Chrome - Safari */
+		 		-o-transition: 1s ease; /* Opera */
 			}
 				header nav > ul > li > a:hover {
-					background: #568EA1;
+					transform : scale(1.5);
+					-moz-transform : scale(1.5); /* Firefox */
+					-webkit-transform : scale(1.5); /* Chrome - Safari */
+					-o-transform : scale(1.5); /* Opera */
+					-ms-transform : scale(1.5); /* IE9 */
+					box-shadow: 2px;
+				}
+				header nav > ul > li:hover {
+    				border-bottom: thick solid #568EA1;
 				}
 /* Para menus flotantes pegados al top de la ventana*/
 .nav-flotante {

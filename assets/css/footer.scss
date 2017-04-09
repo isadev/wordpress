@@ -1,32 +1,11 @@
-.container {
-	width: 100%;
-	left: 0;
-	margin: 0px;
-	padding: 0px;
-}
-
 footer {
+	margin-top: 10px;
 	bottom: 0px;
 	position: fixed;
 	width: 100%;
-	background: #87A7CA;	
-	& nav {
-		& > ul {
-			margin: 0px;
-			list-style: none;
-			& > li {
-				float: left;			
-				& > a {
-					padding: 20px;
-					display: block;
-					color: #fff;
-					text-decoration: none;
-					&:hover {
-						background: #568EA1;
-					}
-				}
-			}
-		}		
+	& > .container {
+		background: #87A7CA !important;
+		text-align: center;
+		color: white;
 	}
-
 }
