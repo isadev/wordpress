@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-
-	hola
-
-<?php get_footer(); ?>
+<section>
+  <div class="tuts">section tutoriales</div>
+</section>
+<main>
+  <article>articulos a publicar
+    <p>mas articulos</p>
+  </article>
+</main><?php get_footer(); ?>
