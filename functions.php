@@ -8,6 +8,8 @@
 		wp_enqueue_script('style_js_', get_template_directory_uri() . '/assets/js/styles.js', array(), '1.0.0', true);
 		wp_enqueue_style( "mod_styles", get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
 		wp_enqueue_style( "footer_styles", get_template_directory_uri() . '/assets/css/footer.css', array(), '1.0.0', 'all');
+		wp_enqueue_style( "section_tuts_styles", get_template_directory_uri() . '/assets/css/sectionTuts.css', array(), '1.0.0', 'all');
+		wp_enqueue_style( "main_articles_styles", get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0', 'all');
 	}
 	add_action( 'wp_enqueue_scripts', 'css_js_scripts' );
 
