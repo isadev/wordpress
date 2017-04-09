@@ -1,5 +1,9 @@
 
 <footer><?php wp_footer();?> 
-  <div class="container"><?php wp_nav_menu(array( 'theme_location' => 'secundario', 'container' => 'nav')) ?></div>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-xs-12">Realizado por Isabel Nieto</div>
+    </div>
+  </div>
 </footer></body>
 </html>
