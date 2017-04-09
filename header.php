@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Some wordpress web page test</title>
   </head>
-  <body class="container">
+  <body>
     <header>
-      <nav>
-        <ul>
-          <li>Conoceme</li>
-          <li>Proyectos</li>
-          <li>Tecnologías</li>
-          <li>Otros</li>
-        </ul>
-      </nav>
+      <div class="container"><?php wp_nav_menu(array( 'theme_location' => 'principal', 'menu_class' => 'menu-flotante', 'container' => 'nav')) ?></div>
     </header>
-  
