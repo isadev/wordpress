@@ -10,22 +10,31 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats
 */
 
-html {
-	background: #568EA1;
-	margin: 60px;
+* {
+	/*background: #568EA1;*/
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
 }
 
 .container {
-	margin-top: 25px;
+	width: 100%
+	/*max-width: 1000px;*/
+	left: 0;
+	margin: 0px;
+	padding: 0px;
+	/*margin-top: 25px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 15px;
 	padding-bottom: 0px;
-	border-radius: 5px;
+	border-radius: 5px;*/
 }
 
 body {
-	background: #BABABA;
+	
 }
 
 /*version movil, cuado la anchua minima sea 350 y la maxima sea 750*/
@@ -33,22 +42,88 @@ body {
 	html,.container {
 		margin: 0px;
 		border-radius: 2px;
+		padding: 0px;
+		width: 100%;
 	}
 }
 
-//Cuando la anchura minima sea 750
+/*Cuando la anchura minima sea 750*/
 @media (min-width: 750px) {
-
+	.container {
+		width : 100%;
+	}
 }
 
-nav > ul {
-	margin-left: 0px;
-	padding-left: 0px;
+/*Cuando la anchura minima sea 750*/
+@media (min-width: 992px) {
+	.container {
+		width : 100%;
+	}
 }
 
-ul li {
-	color: white;
-	list-style: inline;
-	display: inline;
-	padding-left: 15px;
+header nav {
+	background: #BABABA;
+	margin-bottom: 10px;
 }
+
+	header nav > ul {
+		/*background: #87A7CA;*/
+		margin-left: 0px;
+		padding-left: 0px;
+		list-style: none;	
+		overflow: hidden;
+
+	}
+		header nav > ul > li {
+			float: left;
+		}
+			header nav > ul > li > a {
+				padding: 20px;
+				display: block;
+				color: #fff;
+				text-decoration: none;
+			}
+				header nav > ul > li > a:hover {
+					background: #568EA1;
+				}
+/* Para menus flotantes pegados al top de la ventana*/
+.nav-flotante {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0; /*Comentar si no se quiere un menu de barra completo, modificar dimensiones en .container*/
+	width: 100%;
+	/*max-width: 1000px;*/ /*Descomentar si se quiere una barra de menu no completo,, modificar dimensiones en .container */
+}
+	.nav-flotante > ul > li > a {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+/*--------------------------------------------------*/
+
+p {
+	padding-bottom: 140px;
+}
+	/*.estilos ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+		.estilos ul li {
+			margin: 0px;
+			display: inline;
+			list-style: none;
+			overflow: hidden;
+		}
+
+			.estilos ul li a {
+				color: black;
+				display: block;
+				padding: 20px;
+			}
+
+				.estilos ul li a:hover,active {
+					background: #8BDBDC;
+					color: black;
+				}
+*/
