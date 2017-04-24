@@ -1,11 +1,20 @@
 footer {
 	margin-top: 10px;
-	bottom: 0px;
-	position: fixed;
-	width: 100%;
-	& > .container {
+	// bottom: 0px;
+	position: relative;
+	// width: 92%;
+	text-align: center;
+	color: white;
+	& > .row {
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		bottom: 0px;
 		background: #87A7CA !important;
-		text-align: center;
-		color: white;
+		width: 100%;
+		border-radius: 5px;
+		& > .col-xs-12 {
+			padding: 0px;
+		}
 	}
 }

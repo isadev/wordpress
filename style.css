@@ -7,7 +7,7 @@ Description: Some test in wordpress
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats
+Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom-.header_menu, custom-logo, custom-menu, editor-style, featured-images, microformats
 */
 
 * {
@@ -20,49 +20,51 @@ Tags: one-columns, accessibility-ready, custom-background, custom-colors, custom
 }
 
 .container {
-	width: 100% !important;
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
+	width: 70%;
 	background: #939393;
 }
 
-header {
-	width: 100%;
-	/*max-width: 1000px;*/
+/*.header_menu {
 	left: 0;
 	margin: 0px;
 	padding: 0px;
-}
+}*/
 
 /*version movil, cuado la anchua minima sea 350 y la maxima sea 750*/
-@media (min-width: 350px) and (max-width: 750px){
+/*@media (min-width: 350px) and (max-width: 750px){
 	html,.container {
 		margin: 0px;
 		border-radius: 2px;
 		padding: 0px;
 		width: 100%;
 	}
-}
+}*/
 
 /*Cuando la anchura minima sea 750*/
-@media (min-width: 750px) {
+/*@media (min-width: 750px) {
 	.container {
 		width : 100%;
 	}
-}
+}*/
 
 /*Cuando la anchura minima sea 750*/
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 	.container {
 		width : 100%;
 	}
-}
+}*/
 
-header > .container > nav {
-	margin-bottom: 10px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+	header > img {
+		background-size: 50% 50%;
+	}
+
+.header_menu > nav {
 	-webkit-transition: all ease .5s;
 	-moz-transition: all ease .5s;
 	-ms-transition: all ease .5s;
@@ -70,19 +72,20 @@ header > .container > nav {
 	transition: all ease .5s;
 }
 
-	header nav > ul {
+	.header_menu > nav > ul {
 		background: #87A7CA;
 		margin-left: 0px;
 		padding-left: 0px;
-		list-style: none;	
+		list-style: none;
 		overflow: hidden;
-
+		border-radius: 5px;
 	}
-		header nav > ul > li {
+		.header_menu > nav > ul > li {
 			float: left;
+			border-bottom: 5px solid transparent;
 		}
-			header nav > ul > li > a {
-				padding: 20px;
+			.header_menu > nav > ul > li > a {
+				padding: 15px;
 				display: block;
 				color: #fff;
 				text-decoration: none;
@@ -91,30 +94,17 @@ header > .container > nav {
 		 		-webkit-transition: 1s ease; /* Chrome - Safari */
 		 		-o-transition: 1s ease; /* Opera */
 			}
-				header nav > ul > li > a:hover {
+				.header_menu > nav > ul > li > a:hover {
 					transform : scale(1.5);
 					-moz-transform : scale(1.5); /* Firefox */
-					-webkit-transform : scale(1.5); /* Chrome - Safari */
+					-webkit-transform : scale(1.5);  /*Chrome - Safari*/
 					-o-transform : scale(1.5); /* Opera */
 					-ms-transform : scale(1.5); /* IE9 */
 					box-shadow: 2px;
 				}
-				header nav > ul > li:hover {
-    				border-bottom: thick solid #568EA1;
+				.header_menu > nav > ul > li:hover {
+    				border-bottom: 5px solid #568EA1;
 				}
-/* Para menus flotantes pegados al top de la ventana*/
-.nav-flotante {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	left: 0; /*Comentar si no se quiere un menu de barra completo, modificar dimensiones en .container*/
-	width: 100%;
-	/*max-width: 1000px;*/ /*Descomentar si se quiere una barra de menu no completo,, modificar dimensiones en .container */
-}
-	.nav-flotante > ul > li > a {
-		padding-top: 20px;
-		padding-bottom: 10px;
-	}
 /*--------------------------------------------------*/
 
 p {
